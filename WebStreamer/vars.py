@@ -7,9 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Var(object):
-    API_ID = int(getenv('API_ID'))
-    API_HASH = str(getenv('API_HASH'))
-    BOT_TOKEN = str(getenv('BOT_TOKEN'))
+    API_ID = int(getenv('API_ID', '28196161'))
+    API_HASH = str(getenv('API_HASH', '7d82be62e09edfc6b7742e88499fb29b'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN', '7168860319:AAFvLmQA4N6f4SuDtSKCmHdThLCM88Zkjcs'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '3'))
     BIN_CHANNEL = int(getenv('BIN_CHANNEL', None))     
